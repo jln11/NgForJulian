@@ -1,14 +1,27 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      HEROES
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h1>{{title}}</h1>
+
+  <h2>My favorite hero is: {{myHero}}</h2>
+
+  <h3>My most hated hero is: {{myhater}}</h3>
+
+  <p>Heroes:</p>
+
+  <ul>
+
+    <li *ngFor="let hero of heroes">
+
+      {{ hero }}
+
+    </li>
+
+  </ul>
 </ion-content>
